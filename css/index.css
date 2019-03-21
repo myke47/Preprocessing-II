@@ -168,6 +168,39 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.nav-container {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2%;
+  border-bottom: gray 1px dashed;
+}
+.nav-container .nav-content {
+  display: flex;
+  width: 100%;
+}
+.nav-container .nav-content .logo {
+  display: flex;
+  width: 30%;
+}
+.nav-container .nav-content nav {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  margin: auto;
+  font-family: 'Roboto';
+  font-weight: 500;
+  padding: 1%;
+}
+.nav-container .nav-content nav a {
+  display: flex;
+  justify-items: flex-end;
+  margin: auto;
+  padding: 1%;
+  text-decoration: none;
+  color: black;
+  font-size: 1.7rem;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
