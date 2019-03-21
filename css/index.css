@@ -1,3 +1,16 @@
+.btn-class {
+  display: flex;
+  justify-content: center;
+  width: 98%;
+  padding: 10px 40px;
+  border-radius: 10px;
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+}
+.btn-class:hover {
+  background-color: #006667;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -171,9 +184,9 @@ img {
 .nav-container {
   display: flex;
   width: 100%;
-  margin: 0 auto;
+  margin: 1% auto;
   padding: 2%;
-  border-bottom: gray 1px dashed;
+  border-bottom: lightgray 2px dashed;
 }
 .nav-container .nav-content {
   display: flex;
@@ -181,25 +194,22 @@ img {
 }
 .nav-container .nav-content .logo {
   display: flex;
-  width: 30%;
+  width: 50%;
 }
 .nav-container .nav-content nav {
   display: flex;
-  align-items: flex-end;
-  width: 100%;
+  width: 50%;
   margin: auto;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 500;
-  padding: 1%;
 }
 .nav-container .nav-content nav a {
   display: flex;
   justify-items: flex-end;
-  margin: auto;
-  padding: 1%;
+  margin: 0% auto;
   text-decoration: none;
   color: black;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 .footer {
   width: 100%;
@@ -211,6 +221,20 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home .container-header {
+  display: flex;
+  flex-direction: column;
+  border-bottom: lightgray 2px dashed;
+}
+.home .container-header img {
+  display: flex;
+  width: 100%;
+  margin: 0px 0px 30px 0px;
+}
+.home .container-header .header-intro {
+  display: flex;
+  flex-direction: column;
 }
 .home .content-section {
   margin: 30px 0;
@@ -255,6 +279,11 @@ img {
   justify-content: space-between;
 }
 .home .content-pick .destination {
+  display: flex;
+  flex-direction: column;
   width: 30%;
   margin-bottom: 30px;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
 }

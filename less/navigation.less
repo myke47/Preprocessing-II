@@ -2,43 +2,34 @@
 .nav-container {
   display: flex;
   width: 100%;
-  margin: 0 auto;
+  margin: 1% auto;
   padding: 2%;
-  border-bottom: gray 1px dashed;
+  border-bottom: lightgray 2px dashed;
 
   .nav-content {
     display: flex;
     width: 100%;
 
     .logo {
+      display: flex;
+      width: 50%;
+    }
+
+    nav {
+      display: flex;
+      width: 50%;
+      margin: auto;
+      font-family: "Roboto";
+      font-weight: 500;
+
+      a {
         display: flex;
-        width: 30%;
+        justify-items: flex-end;
+        margin: 0% auto;
+        text-decoration: none;
+        color: black;
+        font-size: 1.5rem;
       }
-    
-      nav {
-        display: flex;
-        align-items: flex-end;
-        width: 100%;
-        margin: auto;
-        font-family: 'Roboto';
-        font-weight: 500;
-        padding: 1%;
-    
-        a {
-          display: flex;
-          justify-items: flex-end;
-          margin: auto;
-          padding: 1%;
-          text-decoration: none;
-          color: black;
-          font-size: 1.7rem;
-        }
-
+    }
   }
-
-
-  }
-
-
-    
 }

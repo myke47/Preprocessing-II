@@ -1,1 +1,16 @@
 // Mixins in here
+.btn-class {
+    display: flex;
+    justify-content: center;
+    width: 98%;
+    padding: 10px 40px;
+    border-radius: 10px;
+    background-color: teal;
+    color: white;
+    cursor: pointer;
+  
+    &:hover {
+      // The compiled color returned is #006667 
+      background-color: darken(teal, 5%)
+    }
+  }
