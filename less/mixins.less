@@ -1,16 +1,33 @@
 // Mixins in here
-.btn-class {
+// .btn-class {
+//     display: flex;
+//     justify-content: center;
+//     width: 98%;
+//     padding: 10px 40px;
+//     border-radius: 10px;
+//     background-color: @eastern-blue;
+//     color: white;
+//     cursor: pointer;
+  
+//     &:hover {
+//       background-color: darken(@eastern-blue, 5%)
+//     }
+//   }
+
+  .sign-up-buttons(@radius, @fontsize) {
+    background-color: @eastern-blue;
+    padding: 15px;
     display: flex;
     justify-content: center;
-    width: 98%;
-    padding: 10px 40px;
-    border-radius: 10px;
-    background-color: teal;
-    color: white;
+    align-self: center;
+    width: 95%;
+    color: @white;
+    font-size: @fontsize;
+    border-radius: @radius;
     cursor: pointer;
-  
+
     &:hover {
-      // The compiled color returned is #006667 
-      background-color: darken(teal, 5%)
+      background-color: lighten(@eastern-blue, 5%)
     }
+
   }

@@ -14,6 +14,28 @@
 @sandy-beach: #FFEBCD;
 
 // Media Escapes
+@small-mobile: ~"(max-width: 390px)";
 @mobile: ~"(max-width: 500px)";
 @tablet: ~"(max-width: 768px)";
-// @desktop: ~"(min-width: 800px)";
+@desktop: ~"(min-width: 800px)";
+
+
+
+
+.home {
+    @media @small-mobile {
+        .logo h1 {
+            display: flex;
+            font-size: 3rem;
+        }
+
+        .welcome h1 {
+            display: flex;
+            font-size: 3rem;
+            padding: 1%;
+        }
+
+    }
+}
+
+
