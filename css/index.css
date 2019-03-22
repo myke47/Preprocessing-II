@@ -1,13 +1,30 @@
 @media (max-width: 390px) {
+  .home {
+    flex-direction: column;
+  }
   .home .logo h1 {
-    display: flex;
-    font-size: 3rem;
+    flex-direction: row;
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+  }
+  .home .nav-container {
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0px;
+    margin: 0px;
   }
   .home .welcome h1 {
-    display: flex;
-    font-size: 3rem;
-    padding: 1%;
+    flex-direction: row;
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
   }
+}
+.make-responsive {
+  width: 100%;
+  height: auto;
+  min-width: 175px;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -188,8 +205,10 @@ img {
 }
 @media (max-width: 500px) {
   .nav-container {
-    display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0px;
+    margin: 0px;
   }
 }
 .nav-container .nav-content {
@@ -198,7 +217,6 @@ img {
 }
 @media (max-width: 500px) {
   .nav-container .nav-content {
-    display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1%;
@@ -364,6 +382,8 @@ img {
   }
 }
 .home .content-destination {
+  display: flex;
+  flex-direction: column;
   width: 75%;
   margin: 0 auto 30px;
 }
@@ -376,6 +396,7 @@ img {
   }
 }
 .home .content-destination img {
+  display: flex;
   border-radius: 10px;
 }
 @media (max-width: 500px) {
