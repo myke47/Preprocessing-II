@@ -1,1 +1,47 @@
 // Mixins in here
+// .btn-class {
+//     display: flex;
+//     justify-content: center;
+//     width: 98%;
+//     padding: 10px 40px;
+//     border-radius: 10px;
+//     background-color: @eastern-blue;
+//     color: white;
+//     cursor: pointer;
+  
+//     &:hover {
+//       background-color: darken(@eastern-blue, 5%)
+//     }
+//   }
+
+  .sign-up-buttons(@radius, @fontsize) {
+    background-color: @eastern-blue;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 95%;
+    color: @white;
+    font-size: @fontsize;
+    border-radius: @radius;
+    cursor: pointer;
+
+    &:hover {
+      background-color: lighten(@eastern-blue, 5%)
+    }
+
+  }
+
+  .make-responsive {
+    width: 100%;
+    height: auto;
+    min-width: 175px;
+  }
+
+  .custom-layout(@justify, @align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+  }
+  // usage
+// .custom-layout(flex-end, center);
